@@ -126,6 +126,9 @@ var html1 = '<title> hello-mongoose: MongoLab MongoDB Mongoose Node.js Demo on H
 </head> \
 <h1> hello-mongoose: MongoLab MongoDB Mongoose Node.js Demo on Heroku </h1> \
 <br\> \
+See the <a href="https://devcenter.heroku.com/articles/nodejs-mongoose">supporting article on the Dev Center</a> to learn more about data modeling with Mongoose. \
+<br\> \
+<br\> \
 There are: ';
 var html2 = ' documents. <br\>  <br\> <h2> Documents in MonogoDB database </h2> <pre><code>';
 var html3 = '</code></pre> <br\> <br\> <center><i> Demo code available at <a href="http://github.com/mongolab/hello-mongoose">github.com</a> </i></center>';
