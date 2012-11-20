@@ -74,8 +74,10 @@ var userSchema = new mongoose.Schema({
 var PUser = mongoose.model('PowerUsers', userSchema);
 
 // Clear out old data
-PUser.remove({}, function(err) { 
-   console.log('cleared out old data') 
+PUser.remove({}, function(err) {
+  if (err) {
+    console.log ('error deleting old data.');
+  }
 });
 
 // Creating one user.
