@@ -158,7 +158,6 @@ var html1 = '<title> hello-mongoose: MongoLab MongoDB Mongoose Node.js Demo on H
 See the <a href="https://devcenter.heroku.com/articles/nodejs-mongoose">supporting article on the Dev Center</a> to learn more about data modeling with Mongoose. \
 <br\> \
 <br\> \
-<<<<<<< HEAD
 <br\> <h2> All Documents in MonogoDB database </h2> <pre><code> ';
 var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
