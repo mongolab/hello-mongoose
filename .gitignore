@@ -7,7 +7,7 @@ lib-cov
 *.pid
 *.gz
 
-.DS_Stor
+.DS_Store
 
 pids
 logs
