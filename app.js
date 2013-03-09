@@ -47,11 +47,10 @@ var uristring =
 // The http server will listen to an appropriate port, or default to
 // port 5000.
 var theport = process.env.PORT || 5000;
-var mongoOptions = { db: { safe: true }};
 
 // Makes connection asynchronously.  Mongoose will queue up database
 // operations and release them when the connection is complete.
-mongoose.connect(uristring, mongoOptions, function (err, res) {
+mongoose.connect(uristring, function (err, res) {
   if (err) { 
     console.log ('ERROR connecting to: ' + uristring + '. ' + err);
   } else {
@@ -86,8 +85,7 @@ var johndoe = new PUser ({
   age: 25
 });
 
-// Saving it to the database.  If you restart and run this code
-// multiple times, you will see multiple documents with random ages.
+// Saving it to the database.  
 johndoe.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
