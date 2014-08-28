@@ -6,7 +6,7 @@
 // by Ben Wen with thanks to Aaron Heckmann
 
 //
-// Copyright 2012 ObjectLabs Corp.  
+// Copyright 2014 ObjectLabs Corp.  
 // ObjectLabs operates MongoLab.com a MongoDb-as-a-Service offering
 //
 // MIT Licensed
