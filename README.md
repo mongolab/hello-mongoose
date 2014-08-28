@@ -4,7 +4,7 @@ MongoDB and Node.js are often used together because of their shared use of Javas
 
 ## Deployment
 
-To deploy [the app to Heroku](http://hello-mongoose.herokuapp.com/) you can follow these steps:
+To deploy [the app to Heroku](http://hello-mongoose.herokuapp.com/) you can [click to deploy](https://heroku.com/deploy?template=https://github.com/mongolab/hello-mongoose) or  follow these steps:
 
 1. `git clone git://github.com/mongolab/hello-mongoose.git && cd hello-mongoose`
 2. `heroku create`
