@@ -1,0 +1,6 @@
+{
+  "name": "hello-mongoose",
+  "description": "MongoDB with Mongoose on Node.js example",
+  "repository": "https://github.com/mongolab/hello-mongoose.git",
+  "keywords": ["node", "mongoose", "ODM"]
+}
