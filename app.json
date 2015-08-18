@@ -1,6 +1,7 @@
 {
   "name": "hello-mongoose",
   "description": "MongoDB with Mongoose on Node.js example",
+  "image": "heroku/nodejs",
   "repository": "https://github.com/mongolab/hello-mongoose.git",
   "keywords": ["node", "mongoose", "ODM"],
   "addons": ["mongolab"]
