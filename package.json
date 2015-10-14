@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "MongoDB with Mongoose on Node.js example",
   "main": "app.js",
-  "engines" : { 
+  "engines" : {
       "node" : "0.10.31",
       "npm" : ">=1.4"
   },
@@ -11,11 +11,10 @@
   "authors": [ "Ben Wen", "Chris Chang" ],
   "license": "MIT",
   "dependencies": {
-    "mongoose": "3.8.15"
+    "mongoose": "4.1.11"
   },
   "changelog" : [{"0.0.0": "Initial release"},
 		 {"0.1.0": "Update to Mongoose 3.5.7; new MongoClient semantics"},
                  {"0.2.0": "Update to Mongoose 3.8.15; updated Node engine to 0.10.31; updated npm engine to >=1.4"}],
   "homepage" : "http://hello-mongoose.herokuapp.com"
 }
-
