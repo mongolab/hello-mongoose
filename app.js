@@ -6,7 +6,7 @@
 // by Ben Wen with thanks to Aaron Heckmann
 
 //
-// Copyright 2014 ObjectLabs Corp.  
+// Copyright 2015 ObjectLabs Corp.  
 // ObjectLabs operates MongoLab.com a MongoDb-as-a-Service offering
 //
 // MIT Licensed
@@ -81,7 +81,7 @@ PUser.remove({}, function(err) {
 
 // Creating one user.
 var johndoe = new PUser ({
-  name: { first: 'John', last: '  Doe   ' },
+  name: { first: 'John', last: 'Doe' },
   age: 25
 });
 
