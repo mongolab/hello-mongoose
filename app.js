@@ -10,7 +10,7 @@ var socketio = require("socket.io");
 var uristring =
     process.env.MONGOLAB_URI ||
     process.env.MONGOHQ_URL ||
-    'mongodb://localhost/HelloMongoose';
+    'mongodb://heroku_z802lth6:8uoqc89ntqifsm7undqksf2cfq@ds055935.mongolab.com:55935/heroku_z802lth6';
 
 // The http server will listen to an appropriate port, or default to
 // port 5000.
