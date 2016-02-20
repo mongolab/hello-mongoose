@@ -26,12 +26,12 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6053131">
-              <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+            <state vertical-scroll-proportion="1.6793169">
+              <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
               <folding>
-                <marker date="1455932897000" expanded="true" signature="4031:4107" placeholder="..." />
-                <marker date="1455932897000" expanded="true" signature="4116:4208" placeholder="..." />
-                <marker date="1455932897000" expanded="true" signature="4198:4208" placeholder="..." />
+                <marker date="1455933009000" expanded="true" signature="4005:4081" placeholder="..." />
+                <marker date="1455933009000" expanded="true" signature="4090:4182" placeholder="..." />
+                <marker date="1455933009000" expanded="true" signature="4172:4182" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -55,8 +55,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="210" />
-    <option name="y" value="32" />
+    <option name="x" value="170" />
+    <option name="y" value="27" />
     <option name="width" value="1246" />
     <option name="height" value="725" />
   </component>
@@ -113,9 +113,50 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -130,7 +171,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="210" y="32" width="1246" height="725" extended-state="0" />
+    <frame x="170" y="27" width="1246" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -161,12 +202,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6053131">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+        <state vertical-scroll-proportion="1.6793169">
+          <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
           <folding>
-            <marker date="1455932897000" expanded="true" signature="4031:4107" placeholder="..." />
-            <marker date="1455932897000" expanded="true" signature="4116:4208" placeholder="..." />
-            <marker date="1455932897000" expanded="true" signature="4198:4208" placeholder="..." />
+            <marker date="1455933009000" expanded="true" signature="4005:4081" placeholder="..." />
+            <marker date="1455933009000" expanded="true" signature="4090:4182" placeholder="..." />
+            <marker date="1455933009000" expanded="true" signature="4172:4182" placeholder="..." />
           </folding>
         </state>
       </provider>

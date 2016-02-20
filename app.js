@@ -31,8 +31,8 @@ var userSchema = new mongoose.Schema({
     last: { type: String, trim: true }
   },
   age: { type: Number, min: 0},
-  Latitude:{type: Number},
-  Longitude:{type: Number}
+  Latitude:{type: Number, min: 0},
+  Longitude:{type: Number, min: 0}
 });
 
 // Compiles the schema into a model, opening (or creating, if
@@ -50,8 +50,8 @@ PUser.remove({}, function(err) {
 var bursa = new PUser ({
   name: { first: 'Bursa', last: 'Dan' },
   age: 16,
-  Latitude:40,266864,
-  Longitude:29,063448
+  Latitude:40,
+  Longitude:29
 });
 
 // Saving it to the database.
@@ -61,8 +61,8 @@ bursa.save(function (err) {if (err) console.log ('Error on save!')});
 var janedoe = new PUser ({
   name: { first: 'Jane', last: 'Doe' },
   age: 65,
-  Latitude:40,266864,
-  Longitude:29,063448
+  Latitude:40,
+  Longitude:29
 });
 janedoe.save(function (err) {if (err) console.log ('Error on save!')});
 
@@ -70,8 +70,8 @@ janedoe.save(function (err) {if (err) console.log ('Error on save!')});
 var alicesmith = new PUser ({
   name: { first: 'Alice', last: 'Smith' },
   age: 45,
-  Latitude:40,266864,
-  Longitude:29,063448
+  Latitude:40,
+  Longitude:29
 });
 alicesmith.save(function (err) {if (err) console.log ('Error on save!')});
 
