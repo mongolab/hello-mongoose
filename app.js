@@ -116,7 +116,7 @@ function createWebpage (req, res) {
             query.where('plaka').lt(93);
             query.exec(function(err, result) {
                 if (!err) {
-                    res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6);
+                    res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6 + html7);
                 } else {
                     res.end('Error in second query. ' + err)
                 }
@@ -147,3 +147,4 @@ var html3 = ' documents. </i> <br\> <br\>';
 var html4 = '<h2> Queried (name.last = "Dan", plaka < 93) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
+var html7 = '<img src="https://badge.facebook.com/badge/712052938.259.2073113627.png" alt="Smiley face"  > </i> <br\>';
