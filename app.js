@@ -104,10 +104,10 @@ function createWebpage (req, res) {
 
 
       var query = PUser.find({'name.last': 'Dan'});
-      query.where('age').lt(94);
+      query.where('age').lt(93);
       query.exec(function(err, result) {
         if (!err) {
-          res.end(html4 + JSON.stringify(result, undefined, 2) + html5 + result.length + html6);
+          res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6);
         } else {
           res.end('Error in second query. ' + err)
         }
@@ -135,7 +135,7 @@ var html1 = '<title>Sayfa Basligi Yedir</title> \
 
 var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
-var html4 = '<h2> Queried (name.last = "Doe", age <94) </h2> <pre><code> ';
+var html4 = '<h2> Queried (name.last = "Doe", age <93) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
 
