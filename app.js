@@ -1,4 +1,3 @@
-
 var http = require ('http');	    // For serving a basic web page.
 var mongoose = require ("mongoose"); // The reason for this demo.
 var express = require("express");
@@ -20,27 +19,27 @@ var theport = process.env.PORT || 5000;
 // Makes connection asynchronously.  Mongoose will queue up database
 // operations and release them when the connection is complete.
 mongoose.connect(uristring, function (err, res) {
-  if (err) {
-    console.log ('ERROR connecting to: ' + uristring + '. ' + err);
-  } else {
-    console.log ('Succeeded connected to: ' + uristring);
-  }
+    if (err) {
+        console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+    } else {
+        console.log ('Succeeded connected to: ' + uristring);
+    }
 });
 
 // This is the schema.  Note the types, validation and trim
 // statements.  They enforce useful constraints on the data.
 var userSchema = new mongoose.Schema({
-  name: {
-    first: String,
-    last: { type: String, trim: true }
-  },
+    name: {
+        first: String,
+        last: { type: String, trim: true }
+    },
 
-  koordinat:{
-    Latitude:{type: Number, min: 0},
-    Longitude:{type: Number, min: 0}
-  },
+    koordinat:{
+        Latitude:{type: Number, min: 0},
+        Longitude:{type: Number, min: 0}
+    },
 
-  plaka: { type: Number, min: 0},
+    plaka: { type: Number, min: 0},
 
 });
 
@@ -50,19 +49,19 @@ var PUser = mongoose.model('PowerUsers', userSchema);
 
 // Clear out old data
 PUser.remove({}, function(err) {
-  if (err) {
-    console.log ('error deleting old data.');
-  }
+    if (err) {
+        console.log ('error deleting old data.');
+    }
 });
 
 // Creating one user.
 var bursa = new PUser ({
-  name: { first: 'Bursa', last: 'Dan' },
-  plaka: 16,
-  koordinat: {
-    Latitude: 40.266864,
-    Longitude: 29.063448
-  }
+    name: { first: 'Bursa', last: 'Dan' },
+    plaka: 16,
+    koordinat: {
+        Latitude: 40.266864,
+        Longitude: 29.063448
+    }
 });
 
 // Saving it to the database.
@@ -70,23 +69,23 @@ bursa.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
 var giresun = new PUser ({
-  name: { first: 'Giresun', last: 'Dan' },
-  plaka: 28,
-  koordinat: {
-    Latitude: 40.912811,
-    Longitude: 38.389530
-  }
+    name: { first: 'Giresun', last: 'Dan' },
+    plaka: 28,
+    koordinat: {
+        Latitude: 40.912811,
+        Longitude: 38.389530
+    }
 });
 giresun.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
 var istanbul = new PUser ({
-  name: { first: 'Istanbul', last: 'Dan' },
-  plaka: 34,
-  koordinat: {
-    Latitude: 41.00527,
-    Longitude: 28.97696
-  }
+    name: { first: 'Istanbul', last: 'Dan' },
+    plaka: 34,
+    koordinat: {
+        Latitude: 41.00527,
+        Longitude: 28.97696
+    }
 });
 istanbul.save(function (err) {if (err) console.log ('Error on save!')});
 
@@ -99,31 +98,33 @@ var found = ['DB Connection not yet established.  Try again later.  Check the co
 
 
 http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  createWebpage(req, res);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    createWebpage(req, res);
 }).listen(theport);
 
 
 function createWebpage (req, res) {
-  // Let's find all the documents
-  PUser.find({}).exec(function(err, result) {
-    if (!err) {
-      res.write(html1 + JSON.stringify(result, undefined, 3) +  html2 + result.length + html3);
-
-
-      var query = PUser.find({'name.last': 'Dan'});
-      query.where('plaka').lt(93);
-      query.exec(function(err, result) {
+    // Let's find all the documents
+    PUser.find({}).exec(function(err, result) {
         if (!err) {
-          res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6 + html7);
+            res.write(html1 + JSON.stringify(result, undefined, 3) +  html2 + result.length + html3);
+
+
+
+
+            var query = PUser.find({'name.last': 'Dan'});
+            query.where('plaka').lt(93);
+            query.exec(function(err, result) {
+                if (!err) {
+                    res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6);
+                } else {
+                    res.end('Error in second query. ' + err)
+                }
+            });
         } else {
-          res.end('Error in second query. ' + err)
+            res.end('Error in first query. ' + err)
         }
-      });
-    } else {
-      res.end('Error in first query. ' + err)
-    }
-  });
+    });
 }
 
 // Tell the console we're getting ready.
@@ -135,7 +136,7 @@ console.log('CTRL+C to exit');
 // The rudimentary HTML content in three pieces.
 var html1 = '<title>Sayfa Basligi Yedir</title> \
 <head> \
-<style> body {color: #dc2e24; font-family: sans-serif} </style> \
+<style> body {color: #394a5f; font-family: sans-serif} </style> \
 </head> \
 <body> \
 <h1>Herkese Yedir</h1> \
@@ -146,5 +147,3 @@ var html3 = ' documents. </i> <br\> <br\>';
 var html4 = '<h2> Queried (name.last = "Dan", plaka < 93) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
-var html7 = '<img src="https://badge.facebook.com/badge/712052938.259.2073113627.png">';
-
