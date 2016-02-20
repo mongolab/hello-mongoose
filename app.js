@@ -34,18 +34,28 @@ var userSchema = new mongoose.Schema({
         last: { type: String, trim: true }
     },
 
+    plaka: { type: Number, min: 0},
+
     koordinat:{
         Latitude:{type: Number, min: 0},
         Longitude:{type: Number, min: 0}
-    },
-
-    plaka: { type: Number, min: 0}
+    }
 
 });
 
+//geo
+var GeoSchema = new mongoose.Schema({
+        location: { 'type': {type: String, enum: "Point", default: "Point"},
+        coordinates: { type: [Number],   default: [0,0]} }
+});
+
+
+
 // Compiles the schema into a model, opening (or creating, if
 // nonexistent) the 'PowerUsers' collection in the MongoDB database
-var PUser = mongoose.model('PowerUsers', userSchema);
+var PUser   =   mongoose.model('PowerUsers', userSchema);
+var GeoJSON =   mongoose.model('GeoJSON',    GeoSchema);
+
 
 // Clear out old data
 PUser.remove({}, function(err) {
@@ -53,6 +63,14 @@ PUser.remove({}, function(err) {
         console.log ('error deleting old data.');
     }
 });
+
+GeoJSON.remove({}, function(err) {
+    if (err) {
+        console.log ('error deleting old data.');
+    }
+});
+
+
 
 // Creating one user.
 var bursa = new PUser ({
@@ -63,9 +81,16 @@ var bursa = new PUser ({
         Longitude: 29.063448
     }
 });
+var GeoBursa = new GeoJSON ({
+        location: 'Bursa',
+        coordinates:[ 40.266864,29.063448] }
+);
+
 
 // Saving it to the database.
 bursa.save(function (err) {if (err) console.log ('Error on save!')});
+GeoBursa.save(function (err) {if (err) console.log ('Error on save!')});
+
 
 // Creating more users manually
 var giresun = new PUser ({
