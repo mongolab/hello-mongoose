@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d08fda8b-3217-4bca-8228-66a54c555a61" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deneme/app.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deneme/app.js" afterPath="$PROJECT_DIR$/deneme/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="yedir.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,29 +25,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="35" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="119" column="23" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
               <folding>
-                <marker date="1455934981000" expanded="true" signature="3939:4015" placeholder="..." />
-                <marker date="1455934981000" expanded="true" signature="4024:4124" placeholder="..." />
-                <marker date="1455934981000" expanded="true" signature="4114:4124" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deneme/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4848485">
-              <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-              <folding>
-                <marker date="1455935905000" expanded="true" signature="3931:4007" placeholder="..." />
-                <marker date="1455935905000" expanded="true" signature="4016:4117" placeholder="..." />
-                <marker date="1455935905000" expanded="true" signature="4107:4117" placeholder="..." />
+                <marker date="1455936135000" expanded="true" signature="3942:4018" placeholder="..." />
+                <marker date="1455936135000" expanded="true" signature="4027:4127" placeholder="..." />
+                <marker date="1455936135000" expanded="true" signature="4117:4127" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -62,8 +49,8 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/deneme/app.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -119,20 +106,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="yedir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yedir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yedir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deneme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,9 +252,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1455934981000" expanded="true" signature="3939:4015" placeholder="..." />
-            <marker date="1455934981000" expanded="true" signature="4024:4124" placeholder="..." />
-            <marker date="1455934981000" expanded="true" signature="4114:4124" placeholder="..." />
+            <marker date="1455936135000" expanded="true" signature="3942:4018" placeholder="..." />
+            <marker date="1455936135000" expanded="true" signature="4027:4127" placeholder="..." />
+            <marker date="1455936135000" expanded="true" signature="4117:4127" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -317,24 +290,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="35" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="119" column="23" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
           <folding>
-            <marker date="1455934981000" expanded="true" signature="3939:4015" placeholder="..." />
-            <marker date="1455934981000" expanded="true" signature="4024:4124" placeholder="..." />
-            <marker date="1455934981000" expanded="true" signature="4114:4124" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deneme/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4848485">
-          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-          <folding>
-            <marker date="1455935905000" expanded="true" signature="3931:4007" placeholder="..." />
-            <marker date="1455935905000" expanded="true" signature="4016:4117" placeholder="..." />
-            <marker date="1455935905000" expanded="true" signature="4107:4117" placeholder="..." />
+            <marker date="1455936135000" expanded="true" signature="3942:4018" placeholder="..." />
+            <marker date="1455936135000" expanded="true" signature="4027:4127" placeholder="..." />
+            <marker date="1455936135000" expanded="true" signature="4117:4127" placeholder="..." />
           </folding>
         </state>
       </provider>
