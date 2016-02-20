@@ -1,23 +1,16 @@
-var http =     require ('http');	    // For serving a basic web page.
+var http =     require ('http');
 var mongoose = require ("mongoose");
 //var express =  require ("express");
 //var socketio = require ("socket.io");
 
-
-
-// Here we find an appropriate database to connect to, defaulting to
-// localhost if we don't find one.
 var uristring =
     process.env.MONGOLAB_URI ||
     process.env.MONGOHQ_URL ||
     'mongodb://heroku_z802lth6:8uoqc89ntqifsm7undqksf2cfq@ds055935.mongolab.com:55935/heroku_z802lth6';
 
-// The http server will listen to an appropriate port, or default to
-// port 5000.
 var theport = process.env.PORT || 5000;
 
-// Makes connection asynchronously.  Mongoose will queue up database
-// operations and release them when the connection is complete.
+
 mongoose.connect(uristring, function (err, res) {
     if (err) {
         console.log ('ERROR connecting to: ' + uristring + '. ' + err);
@@ -26,33 +19,22 @@ mongoose.connect(uristring, function (err, res) {
     }
 });
 
-// This is the schema.  Note the types, validation and trim
-// statements.  They enforce useful constraints on the data.
+
 var userSchema = new mongoose.Schema({
-    name: {
-        first: String,
-        last: { type: String, trim: true }
-    },
-
     tel: { type: Number, min: 0},
-
     koordinat:{
         Latitude:{type: Number, min: 0},
         Longitude:{type: Number, min: 0}
     }
-
 });
 
 //geo
 var GeoSchema = new mongoose.Schema({
         location: { 'type': {type: String, enum: "Point", default: "Point"},
-        coordinates: { type: [Number,Number],   default: [0,0]} }
+        coordinates: { type: [Number],   default: [1,2]} }
 });
 
 
-
-// Compiles the schema into a model, opening (or creating, if
-// nonexistent) the 'PowerUsers' collection in the MongoDB database
 var PUser   =   mongoose.model('PowerUsers', userSchema);
 var GeoJSON =   mongoose.model('GeoJSON',    GeoSchema);
 
@@ -64,17 +46,11 @@ PUser.remove({}, function(err) {
     }
 });
 
-GeoJSON.remove({}, function(err) {
-    if (err) {
-        console.log ('error deleting old data.');
-    }
-});
+// GeoJSON.remove({}, function(err) {if (err) {console.log ('error deleting old data.');}});
 
-
-
-// Creating one user.
+//insert
 var bursa = new PUser ({
-    name: { first: 'Bursa', last: 'Dan' },
+
     tel: 16,
     koordinat: {
         Latitude: 40.266864,
@@ -83,8 +59,12 @@ var bursa = new PUser ({
 });
 var GeoBursa = new GeoJSON ({
         location: 'Bursa',
-     //   coordinates:[ 40.266864,29.063448] }
-         coordinates:[ 40,29] }
+     //   coordinates:[ 40.266864,29.063448] },
+
+         coordinates.0: {40},
+         coordinates.1: {29},
+
+}
 );
 
 
@@ -95,7 +75,7 @@ GeoBursa.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
 var giresun = new PUser ({
-    name: { first: 'Giresun', last: 'Dan' },
+  //  name: { first: 'Giresun', last: 'Dan' },
     tel: 28,
     koordinat: {
         Latitude: 40.912811,
@@ -106,7 +86,7 @@ giresun.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
 var istanbul = new PUser ({
-    name: { first: 'Istanbul', last: 'Dan' },
+ //   name: { first: 'Istanbul', last: 'Dan' },
     tel: 34,
     koordinat: {
         Latitude: 41.00527,
