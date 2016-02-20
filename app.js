@@ -83,7 +83,8 @@ var bursa = new PUser ({
 });
 var GeoBursa = new GeoJSON ({
         location: 'Bursa',
-        coordinates:[ 40.266864,29.063448] }
+     //   coordinates:[ 40.266864,29.063448] }
+         coordinates:[ 40,29] }
 );
 
 
