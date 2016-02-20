@@ -104,7 +104,7 @@ function createWebpage (req, res) {
 
 
       var query = PUser.find({'name.last': 'Dan'});
-      query.where('age').lt(64);
+      query.where('age').lt(94);
       query.exec(function(err, result) {
         if (!err) {
           res.end(html4 + JSON.stringify(result, undefined, 2) + html5 + result.length + html6);
