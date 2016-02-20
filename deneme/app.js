@@ -119,10 +119,10 @@ console.log('CTRL+C to exit');
 // The rudimentary HTML content in three pieces.
 var html1 = '<title>2 Yedir</title> \
 <head> \
-<style> body {color: #394a5f; font-family: sans-serif} </style> \
+<style> body {color: #16b419; font-family: sans-serif} </style> \
 </head> \
 <body> \
-<h1>Herkese Yedir</h1> \
+<h1>3Herkese Yedir</h1> \
 See the <a href="http://serene-woodland-88772.herokuapp.com/"> asd \
 <br\> \
 <br\> \
