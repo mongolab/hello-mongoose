@@ -123,10 +123,8 @@ var html1 = '<title>123Herkese Yedir 1</title> \
 </head> \
 <body> \
 <h1>23Herkese Yedir</h1> \
-See the <a href="http://serene-woodland-88772.herokuapp.com/"> asd \
-<br\> \
-<br\> \
 <br\> <h2> All Documents in MonogoDB database </h2> <pre><code> ';
+
 var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
 var html4 = '<h2> Queried (name.last = "Doe", age >64) </h2> <pre><code> ';
