@@ -34,7 +34,7 @@ var userSchema = new mongoose.Schema({
         last: { type: String, trim: true }
     },
 
-    plaka: { type: Number, min: 0},
+    tel: { type: Number, min: 0},
 
     koordinat:{
         Latitude:{type: Number, min: 0},
@@ -46,7 +46,7 @@ var userSchema = new mongoose.Schema({
 //geo
 var GeoSchema = new mongoose.Schema({
         location: { 'type': {type: String, enum: "Point", default: "Point"},
-        coordinates: { type: [Number],   default: [0,0]} }
+        coordinates: { type: [Number,Number],   default: [0,0]} }
 });
 
 
@@ -75,7 +75,7 @@ GeoJSON.remove({}, function(err) {
 // Creating one user.
 var bursa = new PUser ({
     name: { first: 'Bursa', last: 'Dan' },
-    plaka: 16,
+    tel: 16,
     koordinat: {
         Latitude: 40.266864,
         Longitude: 29.063448
@@ -96,7 +96,7 @@ GeoBursa.save(function (err) {if (err) console.log ('Error on save!')});
 // Creating more users manually
 var giresun = new PUser ({
     name: { first: 'Giresun', last: 'Dan' },
-    plaka: 28,
+    tel: 28,
     koordinat: {
         Latitude: 40.912811,
         Longitude: 38.389530
@@ -107,7 +107,7 @@ giresun.save(function (err) {if (err) console.log ('Error on save!')});
 // Creating more users manually
 var istanbul = new PUser ({
     name: { first: 'Istanbul', last: 'Dan' },
-    plaka: 34,
+    tel: 34,
     koordinat: {
         Latitude: 41.00527,
         Longitude: 28.97696
