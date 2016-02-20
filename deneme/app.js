@@ -117,7 +117,7 @@ console.log('CTRL+C to exit');
 
 
 // The rudimentary HTML content in three pieces.
-var html1 = '<title>Herkese Yedir 1</title> \
+var html1 = '<title>2 Yedir</title> \
 <head> \
 <style> body {color: #394a5f; font-family: sans-serif} </style> \
 </head> \
