@@ -131,5 +131,5 @@ var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
 var html4 = '<h2> Queried (name.last = "Doe", age >64) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
-var html6 = ' documents. </i> <br\> <br\>';
+var html6 = ' documents. </i> <br\>';
 
