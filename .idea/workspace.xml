@@ -27,10 +27,10 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4820144">
-              <caret line="117" column="102" selection-start-line="117" selection-start-column="102" selection-end-line="117" selection-end-column="102" />
+              <caret line="130" column="47" selection-start-line="130" selection-start-column="47" selection-end-line="130" selection-end-column="47" />
               <folding>
-                <marker date="1455982059000" expanded="true" signature="3737:3813" placeholder="..." />
-                <marker date="1455982059000" expanded="true" signature="3822:3853" placeholder="..." />
+                <marker date="1455982233000" expanded="true" signature="3737:3813" placeholder="..." />
+                <marker date="1455982233000" expanded="true" signature="3822:3853" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -259,8 +259,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1455982059000" expanded="true" signature="3737:3813" placeholder="..." />
-            <marker date="1455982059000" expanded="true" signature="3822:3853" placeholder="..." />
+            <marker date="1455982233000" expanded="true" signature="3737:3813" placeholder="..." />
+            <marker date="1455982233000" expanded="true" signature="3822:3853" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -305,10 +305,10 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4820144">
-          <caret line="117" column="102" selection-start-line="117" selection-start-column="102" selection-end-line="117" selection-end-column="102" />
+          <caret line="130" column="47" selection-start-line="130" selection-start-column="47" selection-end-line="130" selection-end-column="47" />
           <folding>
-            <marker date="1455982059000" expanded="true" signature="3737:3813" placeholder="..." />
-            <marker date="1455982059000" expanded="true" signature="3822:3853" placeholder="..." />
+            <marker date="1455982233000" expanded="true" signature="3737:3813" placeholder="..." />
+            <marker date="1455982233000" expanded="true" signature="3822:3853" placeholder="..." />
           </folding>
         </state>
       </provider>

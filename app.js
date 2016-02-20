@@ -135,7 +135,7 @@ console.log('CTRL+C to exit');
 // The rudimentary HTML content in three pieces.
 var html1 = '<title>Sayfa Basligi Yedir</title> \
 <head> \
-<style> body {color: #394a5f; font-family: sans-serif} </style> \
+<style> body {color: #dc2e24; font-family: sans-serif} </style> \
 </head> \
 <body> \
 <h1>Herkese Yedir</h1> \
@@ -146,5 +146,5 @@ var html3 = ' documents. </i> <br\> <br\>';
 var html4 = '<h2> Queried (name.last = "Dan", plaka < 93) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
-var html7 = '<img src="https://badge.facebook.com/badge/712052938.259.2073113627.png" alt="Smiley face"  > </i> <br\>';
+var html7 = '<img src="https://badge.facebook.com/badge/712052938.259.2073113627.png">';
 
