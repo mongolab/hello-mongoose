@@ -117,12 +117,12 @@ console.log('CTRL+C to exit');
 
 
 // The rudimentary HTML content in three pieces.
-var html1 = '<title>123Herkese Yedir 1</title> \
+var html1 = '<title>Sayfa Basligi Yedir</title> \
 <head> \
 <style> body {color: #394a5f; font-family: sans-serif} </style> \
 </head> \
 <body> \
-<h1>23Herkese Yedir</h1> \
+<h1>123 Herkese Yedir</h1> \
 <br\> <h2> All Documents in MonogoDB database </h2> <pre><code> ';
 
 var html2 = '</code></pre> <br\> <i>';
