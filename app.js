@@ -106,7 +106,7 @@ function createWebpage (req, res) {
       });
     } else {
       res.end('Error in first query. ' + err)
-    };
+    }
   });
 }
 
@@ -115,25 +115,21 @@ function createWebpage (req, res) {
 console.log('http server will be listening on port %d', theport);
 console.log('CTRL+C to exit');
 
-//
-// House keeping.
 
-//
 // The rudimentary HTML content in three pieces.
-var html1 = '<title> hello-mongoose: MongoLab MongoDB Mongoose Node.js Demo on Heroku </title> \
+var html1 = '<title> Yedir</title> \
 <head> \
 <style> body {color: #394a5f; font-family: sans-serif} </style> \
 </head> \
 <body> \
 <h1>Yedir</h1> \
-See the <a href="http://serene-woodland-88772.herokuapp.com/"> asd \
+See the <a href="http://yedir.herokuapp.com/"> asd \
 <br\> \
 <br\> \
 <br\> <h2> All Documents in MonogoDB database </h2> <pre><code> ';
 var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
-var html4 = '<h2> Queried (name.last = "Doe", age >64) Documents in MonogoDB database </h2> <pre><code> ';
+var html4 = '<h2> Queried (name.last = "Doe", age >64) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
-var html6 = ' documents. </i> <br\> <br\> \
-<br\> <br\>  ';
+var html6 = ' documents. </i> <br\> <br\>';
 
