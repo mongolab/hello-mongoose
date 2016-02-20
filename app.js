@@ -30,7 +30,7 @@ var userSchema = new mongoose.Schema({
     first: String,
     last: { type: String, trim: true }
   },
-  age: { type: Number, min: 0},
+  plaka: { type: Number, min: 0},
   Latitude:{type: Number, min: 0},
   Longitude:{type: Number, min: 0}
 });
@@ -135,7 +135,7 @@ var html1 = '<title>Sayfa Basligi Yedir</title> \
 
 var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
-var html4 = '<h2> Queried (name.last = "Doe", age < 93) </h2> <pre><code> ';
+var html4 = '<h2> Queried (name.last = "Dan", plaka < 93) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
 
