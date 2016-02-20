@@ -98,7 +98,7 @@ function createWebpage (req, res) {
   // Let's find all the documents
   PUser.find({}).exec(function(err, result) {
     if (!err) {
-      res.write(html1 + JSON.stringify(result, undefined, 2) +  html2 + result.length + html3);
+      res.write(html1 + JSON.stringify(result, undefined, 3) +  html2 + result.length + html3);
 
 
 
@@ -135,7 +135,7 @@ var html1 = '<title>Sayfa Basligi Yedir</title> \
 
 var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
-var html4 = '<h2> Queried (name.last = "Doe", age <93) </h2> <pre><code> ';
+var html4 = '<h2> Queried (name.last = "Doe", age < 95) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
 
