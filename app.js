@@ -58,22 +58,22 @@ var bursa = new PUser ({
 bursa.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
-var janedoe = new PUser ({
-  name: { first: 'Giresun', last: 'Findik' },
+var giresun = new PUser ({
+  name: { first: 'Giresun', last: 'Dan' },
   age: 28,
   Latitude:   40.912811,
   Longitude:  38.389530
 });
-janedoe.save(function (err) {if (err) console.log ('Error on save!')});
+giresun.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
-var alicesmith = new PUser ({
-  name: { first: 'Alice', last: 'Smith' },
-  age: 45,
-  Latitude:40,
-  Longitude:29
+var istanbul = new PUser ({
+  name: { first: 'Istanbul', last: 'Dan' },
+  age: 34,
+  Latitude:41.00527,
+  Longitude:28.97696
 });
-alicesmith.save(function (err) {if (err) console.log ('Error on save!')});
+istanbul.save(function (err) {if (err) console.log ('Error on save!')});
 
 
 // In case the browser connects before the database is connected, the
@@ -91,14 +91,20 @@ http.createServer(function (req, res) {
   createWebpage(req, res);
 }).listen(theport);
 
+
+
+
 function createWebpage (req, res) {
   // Let's find all the documents
   PUser.find({}).exec(function(err, result) {
     if (!err) {
       res.write(html1 + JSON.stringify(result, undefined, 2) +  html2 + result.length + html3);
-      // Let's see if there are any senior citizens (older than 64) with the last name Doe using the query constructor
-      var query = PUser.find({'name.last': 'Doe'}); // (ok in this example, it's all entries)
-      query.where('age').gt(64);
+
+
+
+
+      var query = PUser.find({'name.last': 'Dan'});
+      query.where('age').lt(64);
       query.exec(function(err, result) {
         if (!err) {
           res.end(html4 + JSON.stringify(result, undefined, 2) + html5 + result.length + html6);
@@ -124,7 +130,7 @@ var html1 = '<title>Sayfa Basligi Yedir</title> \
 <style> body {color: #394a5f; font-family: sans-serif} </style> \
 </head> \
 <body> \
-<h1>123 Herkese Yedir</h1> \
+<h1>Herkese Yedir</h1> \
 <br\> <h2> All Documents in MonogoDB database </h2> <pre><code> ';
 
 var html2 = '</code></pre> <br\> <i>';
