@@ -49,9 +49,9 @@ PUser.remove({}, function(err) {
 // Creating one user.
 var bursa = new PUser ({
   name: { first: 'Bursa', last: 'Dan' },
-  age: 16,
-  Latitude:40.1234,
-  Longitude:29.1234
+  plaka: 16,
+  Latitude: 40.266864,
+  Longitude:29.063448
 });
 
 // Saving it to the database.
@@ -59,10 +59,10 @@ bursa.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
 var janedoe = new PUser ({
-  name: { first: 'Jane', last: 'Doe' },
-  age: 65,
-  Latitude:40,
-  Longitude:29
+  name: { first: 'Giresun', last: 'Findik' },
+  age: 28,
+  Latitude:   40.912811,
+  Longitude:  38.389530
 });
 janedoe.save(function (err) {if (err) console.log ('Error on save!')});
 
@@ -80,10 +80,12 @@ alicesmith.save(function (err) {if (err) console.log ('Error on save!')});
 // user will see this message.
 var found = ['DB Connection not yet established.  Try again later.  Check the console output for error messages if this persists.'];
 
-// Create a rudimentary http server.  (Note, a real web application
-// would use a complete web framework and router like express.js).
-// This is effectively the main interaction loop for the application.
-// As new http requests arrive, the callback function gets invoked.
+
+
+
+
+
+
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   createWebpage(req, res);
