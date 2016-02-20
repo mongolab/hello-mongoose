@@ -60,14 +60,18 @@ bursa.save(function (err) {if (err) console.log ('Error on save!')});
 // Creating more users manually
 var janedoe = new PUser ({
   name: { first: 'Jane', last: 'Doe' },
-  age: 65
+  age: 65,
+  Latitude:40,266864,
+  Longitude:29,063448
 });
 janedoe.save(function (err) {if (err) console.log ('Error on save!')});
 
 // Creating more users manually
 var alicesmith = new PUser ({
   name: { first: 'Alice', last: 'Smith' },
-  age: 45
+  age: 45,
+  Latitude:40,266864,
+  Longitude:29,063448
 });
 alicesmith.save(function (err) {if (err) console.log ('Error on save!')});
 
