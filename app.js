@@ -39,7 +39,7 @@ var userSchema = new mongoose.Schema({
         Longitude:{type: Number, min: 0}
     },
 
-    plaka: { type: Number, min: 0},
+    plaka: { type: Number, min: 0}
 
 });
 
