@@ -26,11 +26,11 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.107913665">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4820144">
+              <caret line="117" column="102" selection-start-line="117" selection-start-column="102" selection-end-line="117" selection-end-column="102" />
               <folding>
-                <marker date="1455967272000" expanded="true" signature="3731:3807" placeholder="..." />
-                <marker date="1455967272000" expanded="true" signature="3816:3847" placeholder="..." />
+                <marker date="1455982059000" expanded="true" signature="3737:3813" placeholder="..." />
+                <marker date="1455982059000" expanded="true" signature="3822:3853" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -67,8 +67,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="434" />
-    <option name="y" value="23" />
+    <option name="x" value="204" />
+    <option name="y" value="26" />
     <option name="width" value="1404" />
     <option name="height" value="839" />
   </component>
@@ -210,7 +210,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="434" y="23" width="1404" height="839" extended-state="1" />
+    <frame x="204" y="26" width="1404" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22125813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -259,8 +259,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1455967272000" expanded="true" signature="3731:3807" placeholder="..." />
-            <marker date="1455967272000" expanded="true" signature="3816:3847" placeholder="..." />
+            <marker date="1455982059000" expanded="true" signature="3737:3813" placeholder="..." />
+            <marker date="1455982059000" expanded="true" signature="3822:3853" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -304,11 +304,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.107913665">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4820144">
+          <caret line="117" column="102" selection-start-line="117" selection-start-column="102" selection-end-line="117" selection-end-column="102" />
           <folding>
-            <marker date="1455967272000" expanded="true" signature="3731:3807" placeholder="..." />
-            <marker date="1455967272000" expanded="true" signature="3816:3847" placeholder="..." />
+            <marker date="1455982059000" expanded="true" signature="3737:3813" placeholder="..." />
+            <marker date="1455982059000" expanded="true" signature="3822:3853" placeholder="..." />
           </folding>
         </state>
       </provider>
