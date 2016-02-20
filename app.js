@@ -100,8 +100,6 @@ http.createServer(function (req, res) {
 }).listen(theport);
 
 
-
-
 function createWebpage (req, res) {
   // Let's find all the documents
   PUser.find({}).exec(function(err, result) {
