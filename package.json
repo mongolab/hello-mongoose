@@ -14,7 +14,7 @@
     "mongoose": ">=4.1.11"
   },
   "changelog" : [{"0.0.0": "Initial release"},
-		             {"0.1.0": "Update to Mongoose 3.5.7; new MongoClient semantics"},
+                 {"0.1.0": "Update to Mongoose 3.5.7; new MongoClient semantics"},
                  {"0.2.0": "Update to Mongoose 3.8.15; updated Node engine to 0.10.31; updated npm engine to >=1.4"},
                  {"0.3.0": "Update to Mongoose >=4.1.11; updated Node engine to >=4.1.1; updated npm engine to >=2.1.x"}],
   "homepage" : "http://hello-mongoose.herokuapp.com"

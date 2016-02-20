@@ -1,7 +1,7 @@
-var http = require ('http');	    // For serving a basic web page.
-var mongoose = require ("mongoose"); // The reason for this demo.
-var express = require("express");
-var socketio = require("socket.io");
+var http =     require ('http');	    // For serving a basic web page.
+var mongoose = require ("mongoose");
+var express =  require ("express");
+var socketio = require ("socket.io");
 
 
 
