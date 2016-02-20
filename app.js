@@ -94,9 +94,6 @@ var found = ['DB Connection not yet established.  Try again later.  Check the co
 
 
 
-
-
-
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   createWebpage(req, res);

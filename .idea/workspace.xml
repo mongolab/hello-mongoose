@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d08fda8b-3217-4bca-8228-66a54c555a61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="yedir.iws" />
@@ -27,12 +26,12 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8848921">
-              <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.7338129">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
-                <marker date="1455940886000" expanded="true" signature="3663:3739" placeholder="..." />
-                <marker date="1455940886000" expanded="true" signature="3748:3776" placeholder="..." />
-                <marker date="1455940886000" expanded="true" signature="3748:3779" placeholder="..." />
+                <marker date="1455941318000" expanded="true" signature="3660:3736" placeholder="..." />
+                <marker date="1455941318000" expanded="true" signature="3745:3773" placeholder="..." />
+                <marker date="1455941318000" expanded="true" signature="3745:3776" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -251,9 +250,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1455940886000" expanded="true" signature="3663:3739" placeholder="..." />
-            <marker date="1455940886000" expanded="true" signature="3748:3776" placeholder="..." />
-            <marker date="1455940886000" expanded="true" signature="3748:3779" placeholder="..." />
+            <marker date="1455941318000" expanded="true" signature="3660:3736" placeholder="..." />
+            <marker date="1455941318000" expanded="true" signature="3745:3773" placeholder="..." />
+            <marker date="1455941318000" expanded="true" signature="3745:3776" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -299,12 +298,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8848921">
-          <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.7338129">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
-            <marker date="1455940886000" expanded="true" signature="3663:3739" placeholder="..." />
-            <marker date="1455940886000" expanded="true" signature="3748:3776" placeholder="..." />
-            <marker date="1455940886000" expanded="true" signature="3748:3779" placeholder="..." />
+            <marker date="1455941318000" expanded="true" signature="3660:3736" placeholder="..." />
+            <marker date="1455941318000" expanded="true" signature="3745:3773" placeholder="..." />
+            <marker date="1455941318000" expanded="true" signature="3745:3776" placeholder="..." />
           </folding>
         </state>
       </provider>
