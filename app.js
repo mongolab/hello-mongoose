@@ -30,9 +30,14 @@ var userSchema = new mongoose.Schema({
     first: String,
     last: { type: String, trim: true }
   },
+
+  koordinat:{
+    Latitude:{type: Number, min: 0},
+    Longitude:{type: Number, min: 0}
+  },
+
   plaka: { type: Number, min: 0},
-  Latitude:{type: Number, min: 0},
-  Longitude:{type: Number, min: 0}
+
 });
 
 // Compiles the schema into a model, opening (or creating, if
@@ -50,8 +55,10 @@ PUser.remove({}, function(err) {
 var bursa = new PUser ({
   name: { first: 'Bursa', last: 'Dan' },
   plaka: 16,
-  Latitude: 40.266864,
-  Longitude:29.063448
+  koordinat: {
+    Latitude: 40.266864,
+    Longitude: 29.063448
+  }
 });
 
 // Saving it to the database.
@@ -61,8 +68,10 @@ bursa.save(function (err) {if (err) console.log ('Error on save!')});
 var giresun = new PUser ({
   name: { first: 'Giresun', last: 'Dan' },
   plaka: 28,
-  Latitude:   40.912811,
-  Longitude:  38.389530
+  koordinat: {
+    Latitude: 40.912811,
+    Longitude: 38.389530
+  }
 });
 giresun.save(function (err) {if (err) console.log ('Error on save!')});
 
@@ -70,8 +79,10 @@ giresun.save(function (err) {if (err) console.log ('Error on save!')});
 var istanbul = new PUser ({
   name: { first: 'Istanbul', last: 'Dan' },
   plaka: 34,
-  Latitude:41.00527,
-  Longitude:28.97696
+  koordinat: {
+    Latitude: 41.00527,
+    Longitude: 28.97696
+  }
 });
 istanbul.save(function (err) {if (err) console.log ('Error on save!')});
 
