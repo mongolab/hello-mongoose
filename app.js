@@ -60,7 +60,7 @@ bursa.save(function (err) {if (err) console.log ('Error on save!')});
 // Creating more users manually
 var giresun = new PUser ({
   name: { first: 'Giresun', last: 'Dan' },
-  age: 28,
+  plaka: 28,
   Latitude:   40.912811,
   Longitude:  38.389530
 });
@@ -69,7 +69,7 @@ giresun.save(function (err) {if (err) console.log ('Error on save!')});
 // Creating more users manually
 var istanbul = new PUser ({
   name: { first: 'Istanbul', last: 'Dan' },
-  age: 34,
+  plaka: 34,
   Latitude:41.00527,
   Longitude:28.97696
 });
@@ -104,7 +104,7 @@ function createWebpage (req, res) {
 
 
       var query = PUser.find({'name.last': 'Dan'});
-      query.where('age').lt(93);
+      query.where('plaka').lt(93);
       query.exec(function(err, result) {
         if (!err) {
           res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6);
@@ -135,7 +135,7 @@ var html1 = '<title>Sayfa Basligi Yedir</title> \
 
 var html2 = '</code></pre> <br\> <i>';
 var html3 = ' documents. </i> <br\> <br\>';
-var html4 = '<h2> Queried (name.last = "Doe", age < 95) </h2> <pre><code> ';
+var html4 = '<h2> Queried (name.last = "Doe", age < 93) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
 
