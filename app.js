@@ -122,8 +122,8 @@ var html1 = '<title> Yedir</title> \
 <style> body {color: #394a5f; font-family: sans-serif} </style> \
 </head> \
 <body> \
-<h1>Yedir</h1> \
-See the <a href="http://yedir.herokuapp.com/"> asd \
+<h1>Herkese Yedir</h1> \
+See the <a href="http://serene-woodland-88772.herokuapp.com/"> asd \
 <br\> \
 <br\> \
 <br\> <h2> All Documents in MonogoDB database </h2> <pre><code> ';
