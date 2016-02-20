@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d08fda8b-3217-4bca-8228-66a54c555a61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="yedir.iws" />
@@ -27,12 +26,12 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.2340794">
-              <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.9483649">
+              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1455932597000" expanded="true" signature="5234:5310" placeholder="..." />
-                <marker date="1455932597000" expanded="true" signature="5319:5567" placeholder="..." />
+                <marker date="1455932703000" expanded="true" signature="3941:4017" placeholder="..." />
+                <marker date="1455932703000" expanded="true" signature="4026:4118" placeholder="..." />
+                <marker date="1455932703000" expanded="true" signature="4108:4118" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -56,8 +55,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="184" />
-    <option name="y" value="80" />
+    <option name="x" value="210" />
+    <option name="y" value="32" />
     <option name="width" value="1246" />
     <option name="height" value="725" />
   </component>
@@ -131,7 +130,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="184" y="80" width="1246" height="725" extended-state="0" />
+    <frame x="210" y="32" width="1246" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -162,12 +161,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.2340794">
-          <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.9483649">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1455932597000" expanded="true" signature="5234:5310" placeholder="..." />
-            <marker date="1455932597000" expanded="true" signature="5319:5567" placeholder="..." />
+            <marker date="1455932703000" expanded="true" signature="3941:4017" placeholder="..." />
+            <marker date="1455932703000" expanded="true" signature="4026:4118" placeholder="..." />
+            <marker date="1455932703000" expanded="true" signature="4108:4118" placeholder="..." />
           </folding>
         </state>
       </provider>
