@@ -50,8 +50,8 @@ PUser.remove({}, function(err) {
 var bursa = new PUser ({
   name: { first: 'Bursa', last: 'Dan' },
   age: 16,
-  Latitude:40,
-  Longitude:29
+  Latitude:40.1234,
+  Longitude:29.1234
 });
 
 // Saving it to the database.
