@@ -40,6 +40,12 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="submit"></label>
                             <div class="col-md-4">
+
+
+                                <button class="btn btn-default" onclick="getLocation()">Yerimi Bul</button>
+
+                                <p id="demo"></p>
+
                                 <button class="btn btn-default" ng-click="sub()">Yedir</button>
                             </div>
                         </div>
@@ -90,7 +96,7 @@
             // Posting data to php file
             $http({
                 method  : 'POST',
-                url     : 'http://192.168.1.144:5000/',
+                url     : 'http://posttestserver.com/post.php?dir=jsfiddle',
                 data    : $scope.user, //forms user object
                 headers : {'Content-Type': 'application/x-www-form-urlencoded'}
             })
@@ -103,13 +109,39 @@
                             $scope.errorEmail = data.errors.email;
                         } else {
                             $scope.message = data.message;
-                            console.log(datal)
+                            console.log(data);
                             console.log("else ıcınde")
                         }
                     });
         };
+
+        $scope.getLocation = function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+
+        };
     });
+    var x = document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+    }
+
+
 </script>
+
+
 
 
 </body>
