@@ -96,7 +96,11 @@
             // Posting data to php file
             $http({
                 method  : 'POST',
+<<<<<<< HEAD
                 url     : 'http://posttestserver.com/post.php?dir=jsfiddle',
+=======
+                url     : 'http://localhost:5000/',
+>>>>>>> origin/master
                 data    : $scope.user, //forms user object
                 headers : {'Content-Type': 'application/x-www-form-urlencoded'}
             })
@@ -109,7 +113,11 @@
                             $scope.errorEmail = data.errors.email;
                         } else {
                             $scope.message = data.message;
+<<<<<<< HEAD
                             console.log(data);
+=======
+                            //console.log(data)
+>>>>>>> origin/master
                             console.log("else ıcınde")
                         }
                     });
