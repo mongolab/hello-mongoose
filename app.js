@@ -1,6 +1,25 @@
 var http =     require ('http');
 var mongoose = require ("mongoose");
-//var express =  require ("express");
+var express =  require ("express");
+
+var app = express();
+var bodyParser = require('body-parser')
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
+app.post('/ReceiveJSON', function(req, res){
+    console.log(req.body);
+    res.send("ok");
+});
+app.listen(5001);
+console.log('listening to http://localhost:5001');
+
 //var socketio = require ("socket.io");
 
 var uristring =
@@ -116,6 +135,7 @@ function createWebpage (req, res) {
 
             var query = PUser.find({'name.last': 'Dan'});
             query.where('tel').lt(93);
+
             query.exec(function(err, result) {
                 if (!err) {
                     res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6 + html7);

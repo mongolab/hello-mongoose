@@ -90,7 +90,7 @@
             // Posting data to php file
             $http({
                 method  : 'POST',
-                url     : 'http://192.168.1.144:5000/',
+                url     : 'http://localhost:5000/',
                 data    : $scope.user, //forms user object
                 headers : {'Content-Type': 'application/x-www-form-urlencoded'}
             })
@@ -103,7 +103,7 @@
                             $scope.errorEmail = data.errors.email;
                         } else {
                             $scope.message = data.message;
-                            console.log(datal)
+                            console.log(data)
                             console.log("else ıcınde")
                         }
                     });
