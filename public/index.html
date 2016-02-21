@@ -25,28 +25,19 @@
                                 <input id="phonenum" type="text" placeholder="Telefon Numarasi" class="form-control input-md" ng-model="user.phonenum">
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="name">Enlem</label>
+                            <label class="col-md-4 control-label" for="name">Adres</label>
                             <div class="col-md-4">
-                                <input id="latitude" type="text" placeholder="Enlem" class="form-control input-md" ng-model="user.latitude">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="name">Boylam</label>
-                            <div class="col-md-4">
-                                <input id="longitude" type="text" placeholder="Boylam" class="form-control input-md" ng-model="user.longitude">
+                                <input id="address" type="text" placeholder="Adress" class="form-control input-md" ng-model="user.address">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="submit"></label>
                             <div class="col-md-4">
-
-
-                                <button class="btn btn-default" onclick="getLocation()">Yerimi Bul</button>
-
                                 <p id="demo"></p>
 
-                                <button class="btn btn-default" ng-click="sub()">Yedir</button>
+                                <button class="btn btn-default" ng-click="sub()" onclick="getLocation()">Yedir</button>
                             </div>
                         </div>
                     </fieldset>
@@ -116,15 +107,6 @@
                         }
                     });
         };
-
-        $scope.getLocation = function() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-
-        };
     });
     var x = document.getElementById("demo");
     function getLocation() {
@@ -134,8 +116,6 @@
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
     }
-
-    
 
     function showPosition(position) {
         x.innerHTML = "Latitude: " + position.coords.latitude +
