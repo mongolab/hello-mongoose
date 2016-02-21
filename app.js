@@ -114,11 +114,8 @@ function createWebpage (req, res) {
         if (!err) {
             res.write(html1 + JSON.stringify(result, undefined, 3) +  html2 + result.length + html3);
 
-
-
-
             var query = PUser.find({'name.last': 'Dan'});
-            query.where('plaka').lt(93);
+            query.where('tel').lt(93);
             query.exec(function(err, result) {
                 if (!err) {
                     res.end(html4 + JSON.stringify(result, undefined, 3) + html5 + result.length + html6 + html7);
