@@ -10,6 +10,7 @@ var uristring =
 
 var theport = process.env.PORT || 5000;
 
+/*
 
 mongoose.connect(uristring, function (err, res) {
     if (err) {
@@ -18,6 +19,7 @@ mongoose.connect(uristring, function (err, res) {
         console.log ('Succeeded connected to: ' + uristring);
     }
 });
+*/
 
 
 var userSchema = new mongoose.Schema({
@@ -29,16 +31,16 @@ var userSchema = new mongoose.Schema({
 });
 
 //geo
-var GeoSchema = new mongoose.Schema({
+/*var GeoSchema = new mongoose.Schema({
         location: {
             'type': {type: String, enum: "Point", default: "Point"}, coordinates: { type: [Number],default: [1,2]}
                   }
-});
+});*/
 
 //,   default: [1,2]
 
 var PUser   =   mongoose.model('PowerUsers', userSchema);
-var GeoJSON =   mongoose.model('GeoJSON',    GeoSchema);
+//var GeoJSON =   mongoose.model('GeoJSON',    GeoSchema);
 
 
 // Clear out old data
@@ -48,7 +50,7 @@ PUser.remove({}, function(err) {
     }
 });
 
-// GeoJSON.remove({}, function(err) {if (err) {console.log ('error deleting old data.');}});
+//GeoJSON.remove({}, function(err) {if (err) {console.log ('error deleting old data.');}});
 
 //insert
 var bursa = new PUser ({
@@ -59,18 +61,16 @@ var bursa = new PUser ({
         Longitude: 29.063448
     }
 });
-
+/*
 var GeoBursa = new GeoJSON ({
-        location: {type: String, enum: "Point", default: "Point"}, coordinates: { type: [Number],default: [1,2]}
-            'Bursa',
-    location.coordinates: [ -73.97, 40.77 ]
+        location:{   coordinates: { type: [ -73.97, 40.77 ]}}
 
-});
+});*/
 
 
 // Saving it to the database.
 bursa.save(function (err) {if (err) console.log ('Error on save!')});
-GeoBursa.save(function (err) {if (err) console.log ('Error on save!')});
+//GeoBursa.save(function (err) {if (err) console.log ('Error on save!')});
 
 
 // Creating more users manually
