@@ -152,4 +152,4 @@ var html3 = ' documents. </i> <br\> <br\>';
 var html4 = '<h2> Queried (name.last = "Dan", plaka < 93) </h2> <pre><code> ';
 var html5 = '</code></pre> <br\> <i>';
 var html6 = ' documents. </i> <br\>';
-var html7 = '<img src="https://badge.facebook.com/badge/712052938.259.2073113627.png" alt="Smiley face"  > </i> <br\>';
+var html7 = '<img src="http://aarhus.inst.dk/DOK.vdir/shared/3a89a179-bc7d-4e85-8f68-058f788ef1b1.png" > </i> <br\>';
