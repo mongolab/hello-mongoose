@@ -7,13 +7,13 @@ app.controller('FormCtrl', function ($scope, $http) {
 
     $scope.data = {
         firstname: "default",
-        emailaddress: "default",
+        emailaddress: "default",http://posttestserver.com/post.php?dir=jsfiddle
         attitude: 0,
         longitude: 0,
 
     };
     $scope.submitForm = function() {
         console.log("posting data....");
-        $http.post('http://posttestserver.com/post.php?dir=jsfiddle', JSON.stringify(data)).success(function(){/*success callback*/});
+        $http.post('', JSON.stringify(data)).success(function(){/*success callback*/});
     };
 });
