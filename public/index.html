@@ -1,18 +1,94 @@
-<html>
+<!DOCTYPE html>
 <head>
-    <title>Express HTML</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Yedir</title>
 </head>
-<body>
-<div style="margin:100px;">
-    <div class="jumbotron"  style="padding:40px;">
-        <h1>Hello, world!</h1>
-        <p> Yedir </p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<body style="background-color: bisque;">
+
+<div >
+    <div   style="padding:40px;background-color: bisque;">
+        <h2 class="text-center">Yedir'e Hosgeldiniz.</h2>
+        <p class="text-justify">Yedir kar amacı güdmeyen bir kuruluştur. İsterseniz İhtiyac sahipleri için yemek bağışında bulunabilir isterseniz de ihtiyacınız olduğunda yemeğin size gelmesi sağlayabilirsiniz. Bagış da yapsanız ihtiyaç sahibi de olsanız Yedir iznizi sürmez kimlik bilgilerinizle ilgilenmez.</p>
+        <div class="row">
+            <div class="col-md-6" ng-app="myApp" ng-controller="formCtrl">
+                <form  novalidate class="form-horizontal" name="saveTemplateData" action="#" >
+                    <fieldset>
+                        <legend>Yemek istegi icin formu doldurunuz</legend>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Telefon Numarasi</label>
+                            <div class="col-md-4">
+                                <input id="phonenum" type="text" placeholder="Telefon Numarasi" class="form-control input-md" ng-model="user.phonenum">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Enlem</label>
+                            <div class="col-md-4">
+                                <input id="latitude" type="text" placeholder="Enlem" class="form-control input-md" ng-model="user.latitude">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Boylam</label>
+                            <div class="col-md-4">
+                                <input id="longitude" type="text" placeholder="Boylam" class="form-control input-md" ng-model="user.longitude">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit"></label>
+                            <div class="col-md-4">
+                                <button class="btn btn-default" ng-click="sub()">Yedir</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <p>form = {{user }}</p>
+            </div>
+            <div class="col-md-6">
+                <form class="form-horizontal" name="saveData" action="#" >
+                    <fieldset>
+                        <legend>Yemek bağışı yapmak için formu doldurunuz</legend>
+                        <p style=>Yemek bağıs bedeli öğün başına 5 tl'dir. Ödemenizi kredi kartınızlar yapabilirsiniz.</p>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Telefon Numarasi</label>
+                            <div class="col-md-4">
+                                <input id="bphonenum" type="text" placeholder="Telefon Numarasi" class="form-control input-md" ng-model="benefactor.phoneNum">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Öğün sayısı</label>
+                            <div class="col-md-4">
+                                <input id="quantity" type="text" placeholder="Öğün sayısı" class="form-control input-md" ng-model="benefactor.quantity">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit"></label>
+                            <div class="col-md-4">
+                                <button id="pay" name="submit" class="btn btn-default "type="submit" ngClick="Pay"> Bağış Yap</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('formCtrl', function($scope) {
+        $scope.master = {phonenum:"887878", latitude:"888",longitude:"sdkjdsd"};
+        $scope.sub = function() {
+            $scope.user = angular.copy($scope.master);
+            console.log("ozge taggag");
+        };
+        $scope.sub();
+    });
+</script>
+
 </body>
 </html>
