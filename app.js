@@ -30,9 +30,10 @@ var userSchema = new mongoose.Schema({
 
 //geo
 var GeoSchema = new mongoose.Schema({
-        location: { 'type': {type: String, enum: "Point", default: "Point"},
-        coordinates: { type: [Number],   default: [1,2]} }
+        location:    { type: {type: String, enum: "Point", default: "Point"},
+        coordinates: { type: [Number]default: [1,2]} }
 });
+
 
 
 var PUser   =   mongoose.model('PowerUsers', userSchema);
@@ -57,15 +58,11 @@ var bursa = new PUser ({
         Longitude: 29.063448
     }
 });
+
 var GeoBursa = new GeoJSON ({
-        location: 'Bursa',
-     //   coordinates:[ 40.266864,29.063448] },
+        location:{"Bursa"}
 
-         coordinates.0: {40},
-         coordinates.1: {29},
-
-}
-);
+});
 
 
 // Saving it to the database.
