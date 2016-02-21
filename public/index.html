@@ -76,9 +76,9 @@
 </div>
 
 <script>
-    // Defining angularjs application.
+
     var postApp = angular.module('myApp', []);
-    // Controller function and passing $http service and $scope var.
+
     postApp.controller('formCtrl', function($scope, $http) {
         // create a blank object to handle form data.
         $scope.user = {};
@@ -103,7 +103,6 @@
 
                             console.log(data);
 
-                            console.log("else ıcınde")
                         }
                     });
         };
