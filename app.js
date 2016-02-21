@@ -1,6 +1,8 @@
 var http =     require ('http');
 var mongoose = require ("mongoose");
 var express =  require ("express");
+/*
+
 var bodyParser = require('body-parser');
 var app = express();
 
@@ -31,6 +33,7 @@ app.get('/umit', function(request, response) {
 
 app.listen(5001);
 
+*/
 
 
 var uristring =
