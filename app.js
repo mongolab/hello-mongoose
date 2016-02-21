@@ -1,26 +1,37 @@
 var http =     require ('http');
 var mongoose = require ("mongoose");
 var express =  require ("express");
-
+var bodyParser = require('body-parser');
 var app = express();
-var bodyParser = require('body-parser')
+
+app.use(express.static('public'));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.all('*', function(req, res, next) {
+
+app.use('/veli', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.send("ok veli");
     next();
 });
-app.post('/ReceiveJSON', function(req, res){
-    console.log(req.body);
-    res.send("ok");
-});
-app.listen(5001);
-console.log('listening to http://localhost:5001');
 
-//var socketio = require ("socket.io");
+app.post('/ali', function(req, res){
+    console.log("yeyeyyeyeyeyeyeyey")
+    console.log();
+    res.send("ok ali");
+});
+
+app.get('/umit', function(request, response) {
+    console.log(response.user.latitude);
+});
+
+
+app.listen(5001);
+
+
 
 var uristring =
     process.env.MONGOLAB_URI ||
@@ -59,7 +70,7 @@ var GeoSchema = new mongoose.Schema({
 
 
 var PUser   =   mongoose.model('PowerUsers', userSchema);
-GeoJSON =   mongoose.model('GeoJSON',    GeoSchema);
+GeoJSON     =   mongoose.model('GeoJSON',    GeoSchema);
 
 
 // Clear out old data
@@ -124,6 +135,7 @@ var found = ['DB Connection not yet established.  Try again later.  Check the co
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     createWebpage(req, res);
+
 }).listen(theport);
 
 
@@ -152,7 +164,6 @@ function createWebpage (req, res) {
 // Tell the console we're getting ready.
 // The listener in http.createServer should still be active after these messages are emitted.
 console.log('http server will be listening on port %d', theport);
-console.log('CTRL+C to exit');
 
 
 // The rudimentary HTML content in three pieces.
