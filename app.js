@@ -1,7 +1,7 @@
 var http =     require ('http');
 var mongoose = require ("mongoose");
 var express =  require ("express");
-/*
+
 
 var bodyParser = require('body-parser');
 var app = express();
@@ -21,8 +21,6 @@ app.use('/veli', function(req, res, next) {
 });
 
 app.post('/ali', function(req, res){
-    console.log("yeyeyyeyeyeyeyeyey")
-    console.log();
     res.send("ok ali");
 });
 
@@ -33,7 +31,7 @@ app.get('/umit', function(request, response) {
 
 app.listen(5001);
 
-*/
+
 
 
 var uristring =
