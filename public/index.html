@@ -79,18 +79,38 @@
 </div>
 
 <script>
-    var app = angular.module('myApp', []);
-    app.controller('formCtrl', function($scope) {
-        $scope.master = {phonenum:"887878", latitude:"888",longitude:"sdkjdsd"};
+    // Defining angularjs application.
+    var postApp = angular.module('myApp', []);
+    // Controller function and passing $http service and $scope var.
+    postApp.controller('formCtrl', function($scope, $http) {
+        // create a blank object to handle form data.
+        $scope.user = {};
+        // calling our submit function.
         $scope.sub = function() {
-            $scope.user = angular.copy($scope.master);
-            console.log("ozge taggag");
-            $scope.statusText("loading");
-
+            // Posting data to php file
+            $http({
+                method  : 'POST',
+                url     : 'http://192.168.1.144:5000/',
+                data    : $scope.user, //forms user object
+                headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+            })
+                    .success(function(data) {
+                        if (data.errors) {
+                            // Showing errors.
+                            console.log(36366363)
+                            $scope.errorName = data.errors.name;
+                            $scope.errorUserName = data.errors.username;
+                            $scope.errorEmail = data.errors.email;
+                        } else {
+                            $scope.message = data.message;
+                            console.log(datal)
+                            console.log("else ıcınde")
+                        }
+                    });
         };
-        $scope.sub();
     });
 </script>
+
 
 </body>
 </html>
