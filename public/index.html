@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Yedir</title>
+</head>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<body style="background-color: #FFFFFF;">
+
+<div >
+    <div   style="padding:40px;background-color: #ffffff;">
+        <h2 class="text-center">Yedir'e Hosgeldiniz.</h2>
+        <p class="text-justify">Yedir kar amacı güdmeyen bir kuruluştur. İsterseniz İhtiyac sahipleri için yemek bağışında bulunabilir isterseniz de ihtiyacınız olduğunda yemeğin size gelmesi sağlayabilirsiniz. Bagış da yapsanız ihtiyaç sahibi de olsanız Yedir iznizi sürmez kimlik bilgilerinizle ilgilenmez.</p>
+        <div class="row">
+            <div class="col-md-6" ng-app="myApp" ng-controller="formCtrl">
+                <form  novalidate class="form-horizontal" name="saveTemplateData" action="#" >
+                    <fieldset>
+                        <legend>Yemek istegi icin formu doldurunuz</legend>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Telefon Numarasi</label>
+                            <div class="col-md-4">
+                                <input id="phonenum" type="text" placeholder="Telefon Numarasi" class="form-control input-md" ng-model="user.phonenum">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Adres</label>
+                            <div class="col-md-4">
+                                <input id="address" type="text" placeholder="Adress" class="form-control input-md" ng-model="user.address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit"></label>
+                            <div class="col-md-4">
+                                <p id="demo"></p>
+
+                                <button class="btn btn-default btn-lg" ng-click="sub()" onclick="getLocation()">Yedir</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <p>form = {{user }}</p>
+            </div>
+            <div class="col-md-6">
+                <form class="form-horizontal" name="saveData" action="#" >
+                    <fieldset>
+                        <legend>Yemek bağışı yapmak için formu doldurunuz</legend>
+                        <p style=>Yemek bağıs bedeli öğün başına 5 tl'dir. Ödemenizi kredi kartınızlar yapabilirsiniz.</p>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Telefon Numarasi</label>
+                            <div class="col-md-4">
+                                <input id="bphonenum" type="text" placeholder="Telefon Numarasi" class="form-control input-md" ng-model="benefactor.phoneNum">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Öğün sayısı</label>
+                            <div class="col-md-4">
+                                <input id="quantity" type="text" placeholder="Öğün sayısı" class="form-control input-md" ng-model="benefactor.quantity">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit"></label>
+                            <div class="col-md-4">
+                                <button id="pay" name="submit" class="btn btn-default  btn-lg"type="submit" ngClick="Pay"> Bağış Yap</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var postApp = angular.module('myApp', []);
+
+    postApp.controller('formCtrl', function($scope, $http) {
+        // create a blank object to handle form data.
+        $scope.user = {};
+        // calling our submit function.
+        $scope.sub = function() {
+            // Posting data to php file
+            $http({
+                method  : 'POST',
+                url     : 'http://posttestserver.com/post.php?dir=jsfiddle',
+                data    : $scope.user, //forms user object
+                headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+            })
+                    .success(function(data) {
+                        if (data.errors) {
+                            // Showing errors.
+                            console.log(36366363)
+                            $scope.errorName = data.errors.name;
+                            $scope.errorUserName = data.errors.username;
+                            $scope.errorEmail = data.errors.email;
+                        } else {
+                            $scope.message = data.message;
+
+                            console.log(data);
+
+                        }
+                    });
+        };
+    });
+    var x = document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
